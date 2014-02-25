@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+	kXHUIModalTransitionStyleFlipRightWithGap = 0,
+	kXHUIModalTransitionStyleFlipLeftWithGap,
+	kXHUIModalTransitionStyleSplitVertical,
+	kXHUIModalTransitionStyleSplitHorizontal,
+	kXHUIModalTransitionStyleFlyInFromRight,
+	kXHUIModalTransitionStyleFlyInFromLeft,
+	kXHUIModalTransitionStyleDiveInFromRight,
+	kXHUIModalTransitionStyleDiveInFromLeft,
+    
+} XHUIModalTransitionStyleAddition;
+
 @interface UIViewController (iBookTransition)
+
+- (void)presentModalViewController:(UIViewController *)modalViewController withAnimationStyle:(XHUIModalTransitionStyleAddition)style;
+
+- (void)dismissModalViewControllerWithAnimationStyle:(XHUIModalTransitionStyleAddition)style;
 
 @end
