@@ -11,13 +11,13 @@
 typedef enum {
 	kXHUIModalTransitionStyleFlipRightWithGap = 0,
 	kXHUIModalTransitionStyleFlipLeftWithGap,
-	kXHUIModalTransitionStyleSplitVertical,
-	kXHUIModalTransitionStyleSplitHorizontal,
-	kXHUIModalTransitionStyleFlyInFromRight,
+    kXHUIModalTransitionStyleFlyInFromRight,
 	kXHUIModalTransitionStyleFlyInFromLeft,
 	kXHUIModalTransitionStyleDiveInFromRight,
 	kXHUIModalTransitionStyleDiveInFromLeft,
-    
+	kXHUIModalTransitionStyleSplitVertical,
+	kXHUIModalTransitionStyleSplitHorizontal,
+	
 } XHUIModalTransitionStyleAddition;
 
 @interface UIViewController (iBookTransition)
