@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB1E777718BD317000F350A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E777618BD317000F350A3 /* Foundation.framework */; };
+		AB1E777918BD317000F350A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E777818BD317000F350A3 /* CoreGraphics.framework */; };
+		AB1E777B18BD317000F350A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E777A18BD317000F350A3 /* UIKit.framework */; };
+		AB1E778118BD317000F350A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB1E777F18BD317000F350A3 /* InfoPlist.strings */; };
+		AB1E778318BD317000F350A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E778218BD317000F350A3 /* main.m */; };
+		AB1E778718BD317000F350A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E778618BD317000F350A3 /* AppDelegate.m */; };
+		AB1E779218BD317000F350A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1E779118BD317000F350A3 /* Images.xcassets */; };
+		AB1E779918BD317000F350A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E779818BD317000F350A3 /* XCTest.framework */; };
+		AB1E779A18BD317100F350A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E777618BD317000F350A3 /* Foundation.framework */; };
+		AB1E779B18BD317100F350A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1E777A18BD317000F350A3 /* UIKit.framework */; };
+		AB1E77A318BD317100F350A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB1E77A118BD317100F350A3 /* InfoPlist.strings */; };
+		AB1E77A518BD317100F350A3 /* iBookTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77A418BD317100F350A3 /* iBookTransitionTests.m */; };
+		AB1E77B118BD31F700F350A3 /* UIViewController+iBookTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77B018BD31F700F350A3 /* UIViewController+iBookTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB1E779C18BD317100F350A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1E776B18BD317000F350A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1E777218BD317000F350A3;
+			remoteInfo = iBookTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB1E777318BD317000F350A3 /* iBookTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBookTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1E777618BD317000F350A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB1E777818BD317000F350A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB1E777A18BD317000F350A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB1E777E18BD317000F350A3 /* iBookTransition-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBookTransition-Info.plist"; sourceTree = "<group>"; };
+		AB1E778018BD317000F350A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB1E778218BD317000F350A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB1E778418BD317000F350A3 /* iBookTransition-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBookTransition-Prefix.pch"; sourceTree = "<group>"; };
+		AB1E778518BD317000F350A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB1E778618BD317000F350A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB1E779118BD317000F350A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB1E779718BD317000F350A3 /* iBookTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBookTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1E779818BD317000F350A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AB1E77A018BD317100F350A3 /* iBookTransitionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBookTransitionTests-Info.plist"; sourceTree = "<group>"; };
+		AB1E77A218BD317100F350A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB1E77A418BD317100F350A3 /* iBookTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBookTransitionTests.m; sourceTree = "<group>"; };
+		AB1E77AF18BD31F700F350A3 /* UIViewController+iBookTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iBookTransition.h"; sourceTree = "<group>"; };
+		AB1E77B018BD31F700F350A3 /* UIViewController+iBookTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iBookTransition.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB1E777018BD317000F350A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E777918BD317000F350A3 /* CoreGraphics.framework in Frameworks */,
+				AB1E777B18BD317000F350A3 /* UIKit.framework in Frameworks */,
+				AB1E777718BD317000F350A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1E779418BD317000F350A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E779918BD317000F350A3 /* XCTest.framework in Frameworks */,
+				AB1E779B18BD317100F350A3 /* UIKit.framework in Frameworks */,
+				AB1E779A18BD317100F350A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB1E776A18BD317000F350A3 = {
+			isa = PBXGroup;
+			children = (
+				AB1E77AE18BD31E000F350A3 /* Source */,
+				AB1E777C18BD317000F350A3 /* iBookTransition */,
+				AB1E779E18BD317100F350A3 /* iBookTransitionTests */,
+				AB1E777518BD317000F350A3 /* Frameworks */,
+				AB1E777418BD317000F350A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB1E777418BD317000F350A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E777318BD317000F350A3 /* iBookTransition.app */,
+				AB1E779718BD317000F350A3 /* iBookTransitionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB1E777518BD317000F350A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E777618BD317000F350A3 /* Foundation.framework */,
+				AB1E777818BD317000F350A3 /* CoreGraphics.framework */,
+				AB1E777A18BD317000F350A3 /* UIKit.framework */,
+				AB1E779818BD317000F350A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1E777C18BD317000F350A3 /* iBookTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E778518BD317000F350A3 /* AppDelegate.h */,
+				AB1E778618BD317000F350A3 /* AppDelegate.m */,
+				AB1E779118BD317000F350A3 /* Images.xcassets */,
+				AB1E777D18BD317000F350A3 /* Supporting Files */,
+			);
+			path = iBookTransition;
+			sourceTree = "<group>";
+		};
+		AB1E777D18BD317000F350A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E777E18BD317000F350A3 /* iBookTransition-Info.plist */,
+				AB1E777F18BD317000F350A3 /* InfoPlist.strings */,
+				AB1E778218BD317000F350A3 /* main.m */,
+				AB1E778418BD317000F350A3 /* iBookTransition-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB1E779E18BD317100F350A3 /* iBookTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E77A418BD317100F350A3 /* iBookTransitionTests.m */,
+				AB1E779F18BD317100F350A3 /* Supporting Files */,
+			);
+			path = iBookTransitionTests;
+			sourceTree = "<group>";
+		};
+		AB1E779F18BD317100F350A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E77A018BD317100F350A3 /* iBookTransitionTests-Info.plist */,
+				AB1E77A118BD317100F350A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB1E77AE18BD31E000F350A3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E77AF18BD31F700F350A3 /* UIViewController+iBookTransition.h */,
+				AB1E77B018BD31F700F350A3 /* UIViewController+iBookTransition.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB1E777218BD317000F350A3 /* iBookTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1E77A818BD317100F350A3 /* Build configuration list for PBXNativeTarget "iBookTransition" */;
+			buildPhases = (
+				AB1E776F18BD317000F350A3 /* Sources */,
+				AB1E777018BD317000F350A3 /* Frameworks */,
+				AB1E777118BD317000F350A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBookTransition;
+			productName = iBookTransition;
+			productReference = AB1E777318BD317000F350A3 /* iBookTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB1E779618BD317000F350A3 /* iBookTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1E77AB18BD317100F350A3 /* Build configuration list for PBXNativeTarget "iBookTransitionTests" */;
+			buildPhases = (
+				AB1E779318BD317000F350A3 /* Sources */,
+				AB1E779418BD317000F350A3 /* Frameworks */,
+				AB1E779518BD317000F350A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB1E779D18BD317100F350A3 /* PBXTargetDependency */,
+			);
+			name = iBookTransitionTests;
+			productName = iBookTransitionTests;
+			productReference = AB1E779718BD317000F350A3 /* iBookTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB1E776B18BD317000F350A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "HUAJIE QQ群: (142557668) QQ:543413507  Gmail:xhzengAIB@gmail.com";
+				TargetAttributes = {
+					AB1E779618BD317000F350A3 = {
+						TestTargetID = AB1E777218BD317000F350A3;
+					};
+				};
+			};
+			buildConfigurationList = AB1E776E18BD317000F350A3 /* Build configuration list for PBXProject "iBookTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB1E776A18BD317000F350A3;
+			productRefGroup = AB1E777418BD317000F350A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB1E777218BD317000F350A3 /* iBookTransition */,
+				AB1E779618BD317000F350A3 /* iBookTransitionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB1E777118BD317000F350A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E779218BD317000F350A3 /* Images.xcassets in Resources */,
+				AB1E778118BD317000F350A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1E779518BD317000F350A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E77A318BD317100F350A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB1E776F18BD317000F350A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E77B118BD31F700F350A3 /* UIViewController+iBookTransition.m in Sources */,
+				AB1E778718BD317000F350A3 /* AppDelegate.m in Sources */,
+				AB1E778318BD317000F350A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1E779318BD317000F350A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1E77A518BD317100F350A3 /* iBookTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB1E779D18BD317100F350A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1E777218BD317000F350A3 /* iBookTransition */;
+			targetProxy = AB1E779C18BD317100F350A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB1E777F18BD317000F350A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1E778018BD317000F350A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB1E77A118BD317100F350A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB1E77A218BD317100F350A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB1E77A618BD317100F350A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB1E77A718BD317100F350A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB1E77A918BD317100F350A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBookTransition/iBookTransition-Prefix.pch";
+				INFOPLIST_FILE = "iBookTransition/iBookTransition-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB1E77AA18BD317100F350A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBookTransition/iBookTransition-Prefix.pch";
+				INFOPLIST_FILE = "iBookTransition/iBookTransition-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AB1E77AC18BD317100F350A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBookTransition.app/iBookTransition";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBookTransition/iBookTransition-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iBookTransitionTests/iBookTransitionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AB1E77AD18BD317100F350A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBookTransition.app/iBookTransition";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBookTransition/iBookTransition-Prefix.pch";
+				INFOPLIST_FILE = "iBookTransitionTests/iBookTransitionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB1E776E18BD317000F350A3 /* Build configuration list for PBXProject "iBookTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1E77A618BD317100F350A3 /* Debug */,
+				AB1E77A718BD317100F350A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1E77A818BD317100F350A3 /* Build configuration list for PBXNativeTarget "iBookTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1E77A918BD317100F350A3 /* Debug */,
+				AB1E77AA18BD317100F350A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1E77AB18BD317100F350A3 /* Build configuration list for PBXNativeTarget "iBookTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1E77AC18BD317100F350A3 /* Debug */,
+				AB1E77AD18BD317100F350A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB1E776B18BD317000F350A3 /* Project object */;
+}
