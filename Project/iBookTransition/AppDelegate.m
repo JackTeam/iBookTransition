@@ -8,11 +8,17 @@
 
 #import "AppDelegate.h"
 
+#import "XHViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor colorWithRed:0.000 green:0.181 blue:1.000 alpha:1.000];
+    self.window.rootViewController = [[XHViewController alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

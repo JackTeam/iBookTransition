@@ -9,7 +9,7 @@
 #import "UIViewController+iBookTransition.h"
 
 #if DEBUG
-#define ANIMATION_DURATION 5.0f
+#define ANIMATION_DURATION 0.7f
 #else
 #define ANIMATION_DURATION 0.7f
 #endif
@@ -570,7 +570,7 @@
     
 }
 
-- (void)dismissModalViewControllerWithAnimationStyle:(XHUIModalTransitionStyleAddition)style{
+- (void)dismissModalViewControllerWithAnimationStyle:(XHUIModalTransitionStyleAddition)style {
 	
 	UIViewController *fromController = self;
 	if (self.navigationController) {
@@ -581,35 +581,37 @@
 	if (!modalViewController) {
 		modalViewController = fromController.parentViewController;
 	}
-    
-	switch (style) {
-		case kXHUIModalTransitionStyleFlipRightWithGap:
-			[self flipWithGapFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		case kXHUIModalTransitionStyleFlipLeftWithGap:
-			[self flipWithGapFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		case kXHUIModalTransitionStyleSplitVertical:
-			[self splitVerticalFromViewController:fromController toViewController:modalViewController];
-			break;
-		case kXHUIModalTransitionStyleSplitHorizontal:
-			[self splitHorizontalFromViewController:fromController toViewController:modalViewController];
-			break;
-		case kXHUIModalTransitionStyleFlyInFromRight:
-			[self flyInFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		case kXHUIModalTransitionStyleFlyInFromLeft:
-			[self flyInFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		case kXHUIModalTransitionStyleDiveInFromRight:
-			[self diveInFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		case kXHUIModalTransitionStyleDiveInFromLeft:
-			[self diveInFromViewController:fromController toViewController:modalViewController style:style];
-			break;
-		default:
-			break;
-	}
+    if (modalViewController) {
+        switch (style) {
+            case kXHUIModalTransitionStyleFlipRightWithGap:
+                [self flipWithGapFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            case kXHUIModalTransitionStyleFlipLeftWithGap:
+                [self flipWithGapFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            case kXHUIModalTransitionStyleSplitVertical:
+                [self splitVerticalFromViewController:fromController toViewController:modalViewController];
+                break;
+            case kXHUIModalTransitionStyleSplitHorizontal:
+                [self splitHorizontalFromViewController:fromController toViewController:modalViewController];
+                break;
+            case kXHUIModalTransitionStyleFlyInFromRight:
+                [self flyInFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            case kXHUIModalTransitionStyleFlyInFromLeft:
+                [self flyInFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            case kXHUIModalTransitionStyleDiveInFromRight:
+                [self diveInFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            case kXHUIModalTransitionStyleDiveInFromLeft:
+                [self diveInFromViewController:fromController toViewController:modalViewController style:style];
+                break;
+            default:
+                break;
+        }
+        
+    }
 	
 	[self dismissModalViewControllerAnimated:NO];
 	

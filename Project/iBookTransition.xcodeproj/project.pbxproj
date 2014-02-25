@@ -20,6 +20,8 @@
 		AB1E77A318BD317100F350A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB1E77A118BD317100F350A3 /* InfoPlist.strings */; };
 		AB1E77A518BD317100F350A3 /* iBookTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77A418BD317100F350A3 /* iBookTransitionTests.m */; };
 		AB1E77B118BD31F700F350A3 /* UIViewController+iBookTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77B018BD31F700F350A3 /* UIViewController+iBookTransition.m */; };
+		AB1E77B418BD345900F350A3 /* XHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77B318BD345900F350A3 /* XHViewController.m */; };
+		AB1E77B718BD348900F350A3 /* XHPresentModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1E77B618BD348900F350A3 /* XHPresentModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		AB1E77A418BD317100F350A3 /* iBookTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBookTransitionTests.m; sourceTree = "<group>"; };
 		AB1E77AF18BD31F700F350A3 /* UIViewController+iBookTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iBookTransition.h"; sourceTree = "<group>"; };
 		AB1E77B018BD31F700F350A3 /* UIViewController+iBookTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iBookTransition.m"; sourceTree = "<group>"; };
+		AB1E77B218BD345900F350A3 /* XHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHViewController.h; sourceTree = "<group>"; };
+		AB1E77B318BD345900F350A3 /* XHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHViewController.m; sourceTree = "<group>"; };
+		AB1E77B518BD348900F350A3 /* XHPresentModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPresentModalViewController.h; sourceTree = "<group>"; };
+		AB1E77B618BD348900F350A3 /* XHPresentModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPresentModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 			children = (
 				AB1E778518BD317000F350A3 /* AppDelegate.h */,
 				AB1E778618BD317000F350A3 /* AppDelegate.m */,
+				AB1E77B218BD345900F350A3 /* XHViewController.h */,
+				AB1E77B318BD345900F350A3 /* XHViewController.m */,
+				AB1E77B518BD348900F350A3 /* XHPresentModalViewController.h */,
+				AB1E77B618BD348900F350A3 /* XHPresentModalViewController.m */,
 				AB1E779118BD317000F350A3 /* Images.xcassets */,
 				AB1E777D18BD317000F350A3 /* Supporting Files */,
 			);
@@ -254,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1E77B418BD345900F350A3 /* XHViewController.m in Sources */,
 				AB1E77B118BD31F700F350A3 /* UIViewController+iBookTransition.m in Sources */,
 				AB1E778718BD317000F350A3 /* AppDelegate.m in Sources */,
 				AB1E778318BD317000F350A3 /* main.m in Sources */,
+				AB1E77B718BD348900F350A3 /* XHPresentModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
